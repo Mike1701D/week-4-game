@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
+  <title>Crystal Collector</title>
+
+  <!  Add jQuery library link>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <! Add reset link>
+  <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+
+  <! Add bootstrap link>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+  <! Add stylesheet link>
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+
+<body>
+
+  <div class="jumbotron">
+    <h1 class="text-center">Crystal Collector</h1>
+    <br>
+    <h3>You will be given a random number at the start of the game.</h3>
+    <br>
+    <h3>There are 4 crystals below.  By clicking on a crystal you will add a specific amount of points to your total score.</h3>
+    <br>
+    <h3>You win the game by matching your total score to the random number, you lose the game if your total score goes above the random number.</h3>
+    <br>
+    <h3>The value of each crystal is hidden from you until you click on it.</h3>
+    <br>
+    <h3>Each time when the game starts, the game will change the value of each crystal.</h3>
+    <br>
+    <h3>Scroll down to begin!</h3>
+  
+  </div>
+
+  <div class="container">
+
+    <div class="row">
+
+      <!-- Crystal Panel -->
+      <div class="col-lg-6">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h3 class="panel-title">CLICK THE CRYSTALS BELOW</h3>
+          </div>
+
+          <div class="panel-body">
+            <button class="crystal1">
+              <img src="assets/images/xal-1.jpg" width="95" height="95">
+            </button>
+            <button class="crystal2">
+              <img src="assets/images/xal-2.jpg" width="95" height="95">
+             </button>
+            <button class="crystal3">
+              <img src="assets/images/xal-3.jpg" width="95" height="95">
+            </button>
+            <button class="crystal4">
+              <img src="assets/images/xal-4.jpg" width="95" height="95">
+            </button>
+            <br>
+            <br>
+            <h1 id="randomNumber">test1</h1>
+            <h1 id="wins">test2</h1>
+            <h1 id="losses">test3</h1>            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script type="text/javascript" src="assets/javascript/game.js"></script>
+
+</body>
+</html>
