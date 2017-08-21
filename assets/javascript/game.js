@@ -17,6 +17,9 @@ $(document).ready(function() {
     lossesVar = 0;
   }
 
+  //Text at the Start
+
+
   // For each iteration, generate a new random number between 1 and 12 for each crystal's point value
   xalOneVar = Math.floor(Math.random() * 12) + 1;
   xalTwoVar = Math.floor(Math.random() * 12) + 1;
@@ -25,9 +28,6 @@ $(document).ready(function() {
 
   // For each iteration, generate a new random number between 19 and 120 for point value goal
   randomNumberVar = Math.floor(Math.random() * 120) + 19;
-
-  // ZZZZ Need to add display portion of Code here ZZZZ//
-  console.log(randomNumberVar);
      
   // Check what has been clicked
   $(document).on("click", "button", function() {
@@ -47,6 +47,10 @@ $(document).ready(function() {
         console.log("WINNING LIKE CHARLIE SHEEN!");
         winsVar = winsVar + 1;
       }
+      // Update randomNumberVar AND winsVar AND lossesVar
+      $("#randomNumber").html("Random Number:  " + randomNumberVar);
+      $("#wins").html("Number of Wins:  " + winsVar);
+      $("#losses").html("Number of Losses:  " + lossesVar);
     }
     
     if ($(this).hasClass("crystal2")) {
@@ -64,6 +68,10 @@ $(document).ready(function() {
         console.log("WINNING LIKE CHARLIE SHEEN!");
         winsVar = winsVar + 1;
       }
+      // Update randomNumberVar AND winsVar AND lossesVar
+      $("#randomNumber").html("Random Number:  " + randomNumberVar);
+      $("#wins").html("Number of Wins:  " + winsVar);
+      $("#losses").html("Number of Losses:  " + lossesVar);
     }
 
     if ($(this).hasClass("crystal3")) {
@@ -81,6 +89,10 @@ $(document).ready(function() {
         console.log("WINNING LIKE CHARLIE SHEEN!");
         winsVar = winsVar + 1;
       }
+      // Update randomNumberVar AND winsVar AND lossesVar
+      $("#randomNumber").html("Random Number:  " + randomNumberVar);
+      $("#wins").html("Number of Wins:  " + winsVar);
+      $("#losses").html("Number of Losses:  " + lossesVar);
     }
 
     if ($(this).hasClass("crystal4")) {
@@ -98,6 +110,10 @@ $(document).ready(function() {
         console.log("WINNING LIKE CHARLIE SHEEN!");
         winsVar = winsVar + 1;
       }
+      // Update randomNumberVar AND winsVar AND lossesVar
+      $("#randomNumber").html("Random Number:  " + randomNumberVar);
+      $("#wins").html("Number of Wins:  " + winsVar);
+      $("#losses").html("Number of Losses:  " + lossesVar);
     }
     
     if (randomNumberVar < 1) {
@@ -110,9 +126,16 @@ $(document).ready(function() {
       // For each iteration, generate a new random number between 19 and 120 for point value goal
       randomNumberVar = Math.floor(Math.random() * 120) + 19;
       console.log("RESET");
-      // ZZZZ Need to add display portion of Code here ZZZZ//
-      console.log(randomNumberVar);
+      // Update randomNumberVar AND winsVar AND lossesVar
+      $("#randomNumber").html("Random Number:  " + randomNumberVar);
+      $("#wins").html("Number of Wins:  " + winsVar);
+      $("#losses").html("Number of Losses:  " + lossesVar);
       }
 
 	});
+  // Update randomNumberVar AND winsVar AND lossesVar
+  $("#randomNumber").html("Random Number:  " + randomNumberVar);
+  $("#wins").html("Number of Wins:  " + winsVar);
+  $("#losses").html("Number of Losses:  " + lossesVar);
 });
+  
