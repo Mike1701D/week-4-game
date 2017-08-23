@@ -24,15 +24,15 @@
   <div class="jumbotron">
     <h1 class="text-center">Crystal Collector</h1>
     <br>
-    <h3>You will be given a random number at the start of the game.</h3>
+    <h3>You will be given a random number at the start of the game.  Your score will initially equal the random number.</h3>
     <br>
-    <h3>There are 4 crystals below.  By clicking on a crystal you will add a specific amount of points to your total score.</h3>
+    <h3>There are 4 crystals below.  By clicking on a crystal you will deduct a specific amount of points from your score.</h3>
     <br>
-    <h3>You win the game by matching your total score to the random number, you lose the game if your total score goes above the random number.</h3>
+    <h3>You win the game by reducing your total score to zero, you lose the game if your total score goes below zero.</h3>
     <br>
     <h3>The value of each crystal is hidden from you until you click on it.</h3>
     <br>
-    <h3>Each time when the game starts, the game will change the value of each crystal.</h3>
+    <h3>Each time when the game starts, the game will randomly change the value of each crystal.</h3>
     <br>
     <h3>Scroll down to begin!</h3>
   
@@ -65,6 +65,7 @@
             <br>
             <br>
             <h1 id="randomNumber"></h1>
+            <h1 id="score"></h1>
             <h1 id="wins"></h1>
             <h1 id="losses"></h1>            
           </div>
